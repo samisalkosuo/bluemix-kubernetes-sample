@@ -49,7 +49,7 @@ spec:
         image: gcr.io/google_containers/redis:e2e  # or just image: redis
         resources:
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         ports:
         - containerPort: 6379
@@ -104,7 +104,7 @@ spec:
         image: gcr.io/google_samples/gb-redisslave:v1
         resources:
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         env:
         - name: GET_HOSTS_FROM
@@ -165,7 +165,7 @@ spec:
         image: gcr.io/google-samples/gb-frontend:v4
         resources:
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         env:
         - name: GET_HOSTS_FROM
